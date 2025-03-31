@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".section2.Test2_1Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web|phone"
+        android:text="가나다라 http://www.google.com 마바사 02-1234-1234" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/long_text" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="30dp"
+        android:maxHeight="100dp"
+        android:src="@drawable/img_19975_1" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:hint="전화번호 입력"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="is unChecked"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="라디오버튼1" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="라디오버튼2" />
+    </RadioGroup>
+
+</LinearLayout>

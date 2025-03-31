@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication"
-        tools:targetApi="31">
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".section4.Test4_1Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".section3.Test3_2Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".section3.Test3_1Activity"
             android:exported="true">
@@ -30,21 +44,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--
-         안드로이드의 메인 아키텍쳐 : 컴포넌트 기반
-        컴포넌트는 개발자가 만든 클래스, 런타임 시점에 스시템에서 라이프 사이클을 관리
+        <activity
+            android:name=".section1.Test1_1Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        런타임 시점에 시스템은 이 manifest 파일만 보고 우리 앱을 실행 시킨다.
-        ==>개발자가 만든 컴포넌트 클래스 manifest에 꼭 등록 되어야함
-        ==>액티비티 5개 -> <activity> 태그 5개
-        <service><receiver><provider> 등등
-        -->
-        <!-- 액티비티 등록 시 클래스명만 필수 모두 생략 가능 -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-            <!-- 생략 가능하지만 아래처럼 구성된 activity가 유저 아이콘 터치 시 실행 될(최초페이지)라는 설정 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

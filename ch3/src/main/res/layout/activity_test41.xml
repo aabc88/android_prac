@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    tools:context=".section4.Test4_1Activity">
+    <!-- GridLayout 하위에 추가되는 뷰는 width, heigh가 wrap으로 기본 적용되어 설정하지 않아도 된다.
+    명시적으로 match로 지정하는 것은 적용되지 않음.
+    사이즈를 직접 주는것은 적용된다 -->
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="16dp"
+        android:text="name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:text="mm:dd" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="16dp"
+        android:text="title" />
+
+
+</GridLayout>

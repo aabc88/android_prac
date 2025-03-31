@@ -3,15 +3,15 @@ plugins {
 }
 
 android {
+    namespace = "com.example.ch3"
+    compileSdk = 35
+
     viewBinding {
         enable = true
     }
 
-    namespace = "com.example.myapplication"
-    compileSdk = 35
-
     defaultConfig {
-        applicationId = "com.example.myapplication"
+        applicationId = "com.example.ch3"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
