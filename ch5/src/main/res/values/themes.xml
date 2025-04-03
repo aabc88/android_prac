@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+
+    <!-- 테마 적용은 매니페스트에 등록 -->
+    <style name="MyActivityTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#FF0000</item>
+        <item name="colorSecondary">#00FF00</item>
+    </style>
+</resources>
