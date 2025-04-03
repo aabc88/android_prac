@@ -1,3 +1,4 @@
+
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -6,7 +7,7 @@ android {
     namespace = "com.example.ch5"
     compileSdk = 35
 
-    viewBinding{
+    viewBinding {
         enable = true
     }
 
@@ -41,6 +42,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.ui.test.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
