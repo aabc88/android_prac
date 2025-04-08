@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ch7_outer</string>
+    <string name="des_one">One Description</string>
+    <string name="des_two">Two Description</string>
+</resources>
