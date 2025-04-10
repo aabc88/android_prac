@@ -1,6 +1,5 @@
-package com.example.ch9;
+package com.example.ch10;
 
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
